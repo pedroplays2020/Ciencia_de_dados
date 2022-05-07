@@ -1,0 +1,221 @@
+[{
+  "_id": {
+    "$oid": "62741f0bda778619f8015192"
+  },
+  "document_name": "CardType",
+  "card_type_designation": "mastercard",
+  "created_at": "2022-05-05T19:01:31.000Z"
+},{
+  "_id": {
+    "$oid": "62741f0bda778619f8015193"
+  },
+  "document_name": "Credit",
+  "end_duration": "2022-05-05T19:01:31.000Z",
+  "initial_duration": "2022-05-05T19:01:31.000Z",
+  "amount": 10000000,
+  "is_paid": true,
+  "created_at": "2022-05-05T19:01:31.000Z",
+  "updated_at": "2022-05-05T19:01:31.000Z"
+},{
+  "_id": {
+    "$oid": "62741f0bda778619f8015194"
+  },
+  "document_name": "AccountType",
+  "account_type_designation": "debit",
+  "created_at": "2022-05-05T19:01:31.000Z"
+},{
+  "_id": {
+    "$oid": "62741f0bda778619f8015195"
+  },
+  "document_name": "File",
+  "url": "www.docfake.com/cli/account",
+  "created_at": "2022-05-05T19:01:31.000Z",
+  "updated_at": "2022-05-05T19:01:31.000Z"
+},{
+  "_id": {
+    "$oid": "62741f0bda778619f8015196"
+  },
+  "document_name": "User",
+  "uuid_user": "251d251a6a",
+  "address": "Rua Sao Joao",
+  "city": "Lisboa",
+  "phone_number": 963578694,
+  "is_active": true,
+  "first_name": "Paulo",
+  "last_name": "Jorge",
+  "cc_identification": "957427491az9",
+  "nif_identification": 16513545641,
+  "personal_email": "pauloj1990@gmail.com",
+  "dob": "1990-10-24",
+  "created_at": "2022-05-05T19:01:31.000Z",
+  "updated_at": "2022-05-05T19:01:31.000Z"
+},{
+  "_id": {
+    "$oid": "62741f0bda778619f8015197"
+  },
+  "document_name": "User",
+  "uuid_user": "1613ad354",
+  "address": "Rua Olivais",
+  "city": "Lisboa",
+  "phone_number": 924857545,
+  "is_active": true,
+  "first_name": "Joao",
+  "last_name": "Santos",
+  "cc_identification": "957427491az9",
+  "nif_identification": 16513545641,
+  "personal_email": "pauloj1990@gmail.com",
+  "dob": "1990-10-24",
+  "created_at": "2022-05-05T19:01:31.000Z",
+  "updated_at": "2022-05-05T19:01:31.000Z"
+},{
+  "_id": {
+    "$oid": "62741f0bda778619f8015198"
+  },
+  "document_name": "OperationType",
+  "operation_name": "transaction",
+  "created_at": "2022-05-05T19:01:31.000Z"
+},{
+  "_id": {
+    "$oid": "62741f0bda778619f8015199"
+  },
+  "document_name": "CreditProcessStatus",
+  "status": "accepted",
+  "created_at": "2022-05-05T19:01:31.000Z"
+},{
+  "_id": {
+    "$oid": "62741f0bda778619f801519a"
+  },
+  "document_name": "Permission",
+  "permission_designation": "admin",
+  "created_at": "2022-05-05T19:01:31.000Z",
+  "updated_at": "2022-05-05T19:01:31.000Z"
+},{
+  "_id": {
+    "$oid": "62741f0cda778619f801519b"
+  },
+  "document_name": "Customer",
+  "id_user": {
+    "$oid": "62741f0bda778619f8015196"
+  },
+  "contract_number": 924568634,
+  "pin_code": 6852,
+  "created_at": "2022-05-05T19:01:32.000Z",
+  "updated_at": "2022-05-05T19:01:32.000Z"
+},{
+  "_id": {
+    "$oid": "62741f0cda778619f801519c"
+  },
+  "document_name": "Collaborator",
+  "id_user": {
+    "$oid": "62741f0bda778619f8015197"
+  },
+  "work_email_address": "joao.it@banco.com",
+  "work_phone_number": 6852,
+  "created_at": "2022-05-05T19:01:32.000Z",
+  "updated_at": "2022-05-05T19:01:32.000Z"
+},{
+  "_id": {
+    "$oid": "62741f0cda778619f801519d"
+  },
+  "document_name": "Movement",
+  "start_balance": 1600,
+  "end_balance": 1000,
+  "reserved_balance": 600,
+  "id_operation_type": {
+    "$oid": "62741f0bda778619f8015198"
+  },
+  "uuid_movement": "242g4f5s3a54",
+  "created_at": "2022-05-05T19:01:32.000Z"
+},{
+  "_id": {
+    "$oid": "62741f0cda778619f801519e"
+  },
+  "document_name": "Account",
+  "id_account_type": {
+    "$oid": "62741f0bda778619f8015194"
+  },
+  "created_at": "2022-05-05T19:01:32.000Z",
+  "updated_at": "2022-05-05T19:01:32.000Z",
+  "is_active": false,
+  "balance": 1110.5,
+  "files": [
+    {
+      "$oid": "62741f0bda778619f8015195"
+    }
+  ],
+  "movements": [
+    {
+      "$oid": "62741f0cda778619f801519d"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "62741f0cda778619f801519f"
+  },
+  "document_name": "Card",
+  "card_number": 123456789,
+  "card_pin_number": 1234,
+  "created_at": "2022-05-05T19:01:32.000Z",
+  "id_card_type": {
+    "$oid": "62741f0bda778619f8015192"
+  },
+  "update_at": "2022-05-05T19:01:32.000Z",
+  "valid_until": "2022-05-05T19:01:32.000Z",
+  "cvv": 711,
+  "card_hoder_name": "joao",
+  "is active": true,
+  "id_account": {
+    "$oid": "62741f0cda778619f801519e"
+  }
+},{
+  "_id": {
+    "$oid": "62741f0cda778619f80151a0"
+  },
+  "document_name": "Holder",
+  "id_account": {
+    "$oid": "62741f0cda778619f801519e"
+  },
+  "id_customer ": {
+    "$oid": "62741f0cda778619f801519b"
+  },
+  "is_active": true,
+  "register_date": "2022-05-05T19:01:32.000Z",
+  "created_at": "2022-05-05T19:01:32.000Z",
+  "updated_at": "2022-05-05T19:01:32.000Z"
+},{
+  "_id": {
+    "$oid": "62741f0cda778619f80151a1"
+  },
+  "document_name": "HolderPermission",
+  "id_permission ": {
+    "$oid": "62741f0bda778619f801519a"
+  },
+  "id_holder": {
+    "$oid": "62741f0cda778619f80151a0"
+  },
+  "is_permision_active": true,
+  "created_at": "2022-05-05T19:01:32.000Z",
+  "updated_at": "2022-05-05T19:01:32.000Z"
+},{
+  "_id": {
+    "$oid": "62741f0cda778619f80151a2"
+  },
+  "document_name": "CreditProcess",
+  "id_account": {
+    "$oid": "62741f0cda778619f801519e"
+  },
+  "id_customer": {
+    "$oid": "62741f0cda778619f801519b"
+  },
+  "id_collaborator": {
+    "$oid": "62741f0cda778619f801519c"
+  },
+  "credit_process_status": {
+    "$oid": "62741f0bda778619f8015199"
+  },
+  "credit": {
+    "$oid": "62741f0bda778619f8015193"
+  },
+  "status": "accepted",
+  "created_at": "2022-05-05T19:01:32.000Z"
+}]
